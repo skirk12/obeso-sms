@@ -2,6 +2,13 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\StudentController;
+use App\Http\Controllers\Api\ScholarshipController;
+use App\Http\Controllers\Api\ApplicationController;
+
+Route::apiResource('student', StudentController::class);
+Route::apiResource('scholarship', ScholarshipController::class);
+Route::apiResource('application', ApplicationController::class);
 
 /*
 |--------------------------------------------------------------------------
